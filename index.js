@@ -16,8 +16,7 @@ var randomNumberToMatch = 0;
 
     
 function resetAll(){
-    randomNumberToMatch();
-    randomGenerator();
+    randomGenerator(0);
     additionFromCrystals = 0;
 
     $("#score").text(additionFromCrystals);
@@ -86,13 +85,17 @@ function resetAll(){
 
     });
 
+    
+
     var checkScore = function(){
         if (additionFromCrystals === randomNumberToMatch){
             userWins++;
             $("#wins").text(userWins);
+            resetAll();
         } else if (additionFromCrystals > randomNumberToMatch) {
             userLoses++;
             $("#loses").text(userLoses);
+            resetAll();
         }
     
     }

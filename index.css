@@ -10,27 +10,48 @@ header {
     height: 100%;
     background-color: transparent;
     width: 100%;
-    padding-top: 38px;
+    padding-top: 32px;
     padding-bottom: 15px;
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: white;
+
 }
 
 
+#uno {
+  color: darkgreen;
+}
 
+#dos{
+  color: rgb(22, 19, 9);
+}
+
+td {
+  color: black;
+}
+
+#tres{
+  color: purple;
+}
+
+#quatro{
+  color:rgb(156, 112, 1);
+}
 
 
 #num {
-    padding-left: 21.34%;
-    border-collapse: separate;
-    border-spacing: 20px;
-    font-size: 46px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right: 20%;
-    background-color: transparent;
+  padding-left: 17.34%;
+  border-collapse: separate;
+  border-spacing: 20px;
+  font-size: 46px;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 14%;
+  background-color: transparent;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: white;
     
 }
 
@@ -39,8 +60,69 @@ header {
     border: none;
 }
 
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  @keyframes bouncing {
+    0%, 50%, 100% { /* OR from, 50%, to */
+        top: 0;
+    }
+    25%, 75% {
+        top: 100px;
+    }
+}
+              
+  
+#crystals button:hover {
+  background-color: rgba(218, 165, 32, 0.685);
+  border-radius: 8px;
+  cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAaCAMAAABigZc2AAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAFpJREFUeNp9jUEOwEAIAhn+/+imjbs1bC0XzQioSUAAYZs0mcVY051RbGXfFsyxibTVHXhuhXYlbuRGPbe7kz3g0wf679OuizDBdCaberLE4AsjGliD02eNugA+MQFAPqynHQAAAABJRU5ErkJggg==),auto;
+  
+
+}
+  
+
+  #crystals button:active {
+      animation: shake 1.90s cubic-bezier(.36,.07,.19,.97) both;
+
+
+  }
+
 #crystals {
-    margin-left: 12%;
+    /* margin-left: 12%; */
+    background-color: rgba(19, 14, 1, 0.466);
+    padding-left: 10%;
+}
+
+#social {
+  font-size: 62px;
+    margin-left: 42%;
+    margin-bottom: -3%;
+    margin-top: 1%;
+}
+
+p{
+  margin-bottom: 0%;
+  margin-top: 3%;
+  margin-left: 39%;
+  font-family: 'Gloria Hallelujah', cursive;
+
 }
 
 
