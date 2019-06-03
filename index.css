@@ -34,8 +34,13 @@ header {
     
 }
 
-button {
+#crystals button {
     background: transparent;
+    border: none;
+}
+
+#crystals {
+    margin-left: 12%;
 }
 
 

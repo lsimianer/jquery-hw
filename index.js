@@ -15,6 +15,14 @@ var randomNumberToMatch = 0;
 // I need to reset the values
 
     
+function resetAll(){
+    randomNumberToMatch();
+    randomGenerator();
+    additionFromCrystals = 0;
+
+    $("#score").text(additionFromCrystals);
+    $("#numero").text(randomNumberToMatch);
+}
 
     var randomNumberToMatch = function (){
         randomNumberToMatch = Math.floor((Math.random() * 120) + 19);
