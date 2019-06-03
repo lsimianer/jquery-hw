@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-
+console.log("ready ran")
 //initialize the variables
 
 var additionFromCrystals = 0;
@@ -20,7 +20,13 @@ var randomNumberToMatch = 0;
         randomNumberToMatch = Math.floor((Math.random() * 120) + 19);
         
             //put number on the DOM
-        $("#numero").html(randomNumberToMatch);
+
+        $("#numero").text(randomNumberToMatch);
+
+        // document.getElementById("#numero").innerHTML = randomNumberToMatch;
+
+
+        console.log("numero ran")
     }
 
     var randomGenerator = function () {
@@ -28,7 +34,7 @@ var randomNumberToMatch = 0;
         randomCrystalTwo = Math.floor((Math.random() * 20) + 1);
         randomCrystalThree = Math.floor((Math.random() * 22) + 1);
         randomCrystalFour = Math.floor((Math.random() * 22) + 1);
-          
+          console.log("rn's assigned")
     }
 
     function addingToScore(crystalNumber) {
@@ -43,24 +49,31 @@ var randomNumberToMatch = 0;
         addingToScore(randomCrystalOne);
         $("#score").text(additionFromCrystals);
         checkScore();
+        console.log("checkscore ran 1")
+
     });
 
     $("#crystal_Two").on("click", function(){
         addingToScore(randomCrystalTwo);
         $("#score").text(additionFromCrystals);
         checkScore();
+        console.log("checkscore ran 2")
+
     });
 
     $("#crystal_Three").on("click", function(){
         addingToScore(randomCrystalThree);
         $("#score").text(additionFromCrystals);
         checkScore();
+        console.log("checkscore ran 3")
+
     });
 
     $("#crystal_Four").on("click", function(){
         addingToScore(randomCrystalFour);
         $("#score").text(additionFromCrystals);
         checkScore();
+        console.log("checkscore ran 4")
 
 
     });
