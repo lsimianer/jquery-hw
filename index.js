@@ -14,17 +14,9 @@ var randomNumberToMatch = 0;
 
 // I need to reset the values
 
-    function resetAll() {
-        randomNumberToMatch();
-        randomGenerator();
-        additionFromCrystals = 0;
+    
 
-        $("#score").text(additionFromCrystals);
-        $("#numero").text(numberToMatch);
-        
-    }
-
-    var numberToMatch = function (){
+    var randomNumberToMatch = function (){
         randomNumberToMatch = Math.floor((Math.random() * 120) + 19);
         
             //put number on the DOM
@@ -44,7 +36,7 @@ var randomNumberToMatch = 0;
         crystalNumber;
     }
 
-    numberToMatch();
+    randomNumberToMatch();
     randomGenerator();
 
     $("#crystal_One").on("click", function(){
@@ -69,15 +61,15 @@ var randomNumberToMatch = 0;
         addingToScore(randomCrystalFour);
         $("#score").text(additionFromCrystals);
         checkScore();
+
+
     });
 
     var checkScore = function(){
         if (additionFromCrystals === randomNumberToMatch){
-            resetAll();
             userWins++;
             $("#wins").text(userWins);
         } else if (additionFromCrystals > randomNumberToMatch) {
-            resetAll();
             userLoses++;
             $("#loses").text(userLoses);
         }
@@ -89,4 +81,4 @@ var randomNumberToMatch = 0;
 
 
 
-})
+});
