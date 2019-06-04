@@ -126,3 +126,27 @@ p{
 }
 
 
+@media only screen and (max-width: 500px) {
+    
+
+    #header {
+        width: 185%;
+    }
+
+    img {
+        width: 150px;
+        height:150px;
+    }
+
+    #crystals {
+        padding-left: 10%;
+        width: 174%;
+    }
+
+    #footer {
+        padding-left: 30%;
+        padding-top: 20px;
+    }
+    
+  }
+
